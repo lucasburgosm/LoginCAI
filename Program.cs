@@ -10,8 +10,6 @@ namespace LoginCAI
         {
             ApplicationConfiguration.Initialize();
             Application.Run(new Menu.MenuForm());
-
-            // testdffdfdf
         }
     }
 }

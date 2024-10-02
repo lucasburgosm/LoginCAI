@@ -47,13 +47,12 @@
             // remitosBtn
             // 
             remitosBtn.Font = new Font("Sitka Small", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            remitosBtn.Location = new Point(307, 254);
+            remitosBtn.Location = new Point(307, 256);
             remitosBtn.Name = "remitosBtn";
             remitosBtn.Size = new Size(163, 80);
             remitosBtn.TabIndex = 4;
             remitosBtn.Text = "Remitos";
             remitosBtn.UseVisualStyleBackColor = true;
-            remitosBtn.Click += remitosBtn_Click;
             // 
             // MenuForm
             // 
@@ -69,7 +68,6 @@
 
         #endregion
 
-        private Button button3;
         private Button ordenesBtn;
         private Button remitosBtn;
     }

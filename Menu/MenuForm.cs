@@ -17,10 +17,6 @@ namespace LoginCAI.Menu
             InitializeComponent();
         }
 
-        private void remitosBtn_Click(object sender, EventArgs e)
-        {
-  
-        }
 
         private void ordenesBtn_Click(object sender, EventArgs e)
         {
