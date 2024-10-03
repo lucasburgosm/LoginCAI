@@ -9,7 +9,7 @@ namespace LoginCAI
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new Menu.MenuForm());
+            Application.Run(new Form1());
         }
     }
 }
