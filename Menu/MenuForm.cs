@@ -7,7 +7,7 @@
             InitializeComponent();
         }
 
-        private void ordenesBtn_Click(object sender, EventArgs e)
+        private void OrdenesBtn_Click(object sender, EventArgs e)
         {
             try
             {
