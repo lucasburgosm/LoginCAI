@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             ordenesBtn = new Button();
-            remitosBtn = new Button();
+            RemitosBtn = new Button();
             SuspendLayout();
             // 
             // ordenesBtn
@@ -44,22 +44,23 @@
             ordenesBtn.UseVisualStyleBackColor = true;
             ordenesBtn.Click += ordenesBtn_Click;
             // 
-            // remitosBtn
+            // RemitosBtn
             // 
-            remitosBtn.Font = new Font("Sitka Small", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            remitosBtn.Location = new Point(307, 256);
-            remitosBtn.Name = "remitosBtn";
-            remitosBtn.Size = new Size(163, 80);
-            remitosBtn.TabIndex = 4;
-            remitosBtn.Text = "Remitos";
-            remitosBtn.UseVisualStyleBackColor = true;
+            RemitosBtn.Font = new Font("Sitka Small", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            RemitosBtn.Location = new Point(307, 256);
+            RemitosBtn.Name = "RemitosBtn";
+            RemitosBtn.Size = new Size(163, 80);
+            RemitosBtn.TabIndex = 4;
+            RemitosBtn.Text = "Remitos";
+            RemitosBtn.UseVisualStyleBackColor = true;
+            RemitosBtn.Click += RemitosBtn_Click;
             // 
             // MenuForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(remitosBtn);
+            Controls.Add(RemitosBtn);
             Controls.Add(ordenesBtn);
             Name = "MenuForm";
             Text = "MenuForm";
@@ -69,6 +70,6 @@
         #endregion
 
         private Button ordenesBtn;
-        private Button remitosBtn;
+        private Button RemitosBtn;
     }
 }

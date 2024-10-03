@@ -60,6 +60,7 @@
             Controls.Add(mostrarOrdenesBtn);
             Name = "OrdenesForm";
             Text = "OrdenesForm";
+            Load += OrdenesForm_Load;
             ResumeLayout(false);
         }
 
