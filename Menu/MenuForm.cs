@@ -1,4 +1,6 @@
-﻿namespace LoginCAI.Menu
+﻿using System.ComponentModel;
+
+namespace LoginCAI.Menu
 {
     public partial class MenuForm : Form
     {
@@ -12,6 +14,12 @@
         }
         private void MenuForm_FormClosed(object sender, FormClosedEventArgs e)
         {
+            BackgroundWorker myBackgroundWorker = new BackgroundWorker();
+            if (myBackgroundWorker.IsBusy)
+            {
+                myBackgroundWorker.CancelAsync();
+                Application.Exit();
+            }
             Application.Exit();
         }
 

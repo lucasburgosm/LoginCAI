@@ -16,6 +16,10 @@ namespace LoginCAI.Menu.Remitos
         {
             InitializeComponent();
         }
+        private void RemitosForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
 
         private void RemitosForm_Load(object sender, EventArgs e)
         {
