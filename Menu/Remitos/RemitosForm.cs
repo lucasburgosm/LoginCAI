@@ -8,21 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LoginCAI.Menu.Ordenes
+namespace LoginCAI.Menu.Remitos
 {
-    public partial class OrdenesForm : Form
+    public partial class RemitosForm : Form
     {
-        public OrdenesForm()
+        public RemitosForm()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void OrdenesForm_Load(object sender, EventArgs e)
+        private void RemitosForm_Load(object sender, EventArgs e)
         {
 
         }

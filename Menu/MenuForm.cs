@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace LoginCAI.Menu
+﻿namespace LoginCAI.Menu
 {
     public partial class MenuForm : Form
     {
@@ -17,15 +7,37 @@ namespace LoginCAI.Menu
             InitializeComponent();
         }
 
-
         private void ordenesBtn_Click(object sender, EventArgs e)
         {
-            // Create an instance of Form2 located in the Forms folder
-            Ordenes.OrdenesForm formOrdenes = new Ordenes.OrdenesForm();
-            // Show Form2
-       
-            formOrdenes.Show();
-            this.Hide();
+            try
+            {
+                Ordenes.OrdenesForm formOrdenes = new Ordenes.OrdenesForm();
+                formOrdenes.Show();
+                this.Hide(); // Hide current form or consider closing it
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred while opening the Orders form: " + ex.Message);
+            }
+        }
+
+        private void RemitosBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Remitos.RemitosForm formRemitos = new Remitos.RemitosForm();
+                formRemitos.Show();
+                this.Hide(); // Hide current form or consider closing it
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred while opening the Remitos form: " + ex.Message);
+            }
+        }
+
+        private void MenuForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
