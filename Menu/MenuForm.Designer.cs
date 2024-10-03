@@ -42,7 +42,7 @@
             ordenesBtn.TabIndex = 3;
             ordenesBtn.Text = "Ordenes";
             ordenesBtn.UseVisualStyleBackColor = true;
-            ordenesBtn.Click += ordenesBtn_Click;
+            ordenesBtn.Click += OrdenesBtn_Click;
             // 
             // RemitosBtn
             // 
