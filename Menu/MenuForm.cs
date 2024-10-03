@@ -6,6 +6,14 @@
         {
             InitializeComponent();
         }
+        private void MenuForm_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void MenuForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
 
         private void OrdenesBtn_Click(object sender, EventArgs e)
         {
@@ -22,13 +30,13 @@
         }
 
 
-        private void ordenesBtn_Click(object sender, EventArgs e)
+        private void RemitosBtn_Click(object sender, EventArgs e)
         {
             // Create an instance of Form2 located in the Forms folder
-            Ordenes.OrdenesForm formOrdenes = new Ordenes.OrdenesForm();
+            Remitos.RemitosForm formRemitos = new Remitos.RemitosForm();
             // Show Form2
-       
-            formOrdenes.Show();
+
+            formRemitos.Show();
             this.Hide();
         }
     }
